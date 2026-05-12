@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Erika Sala</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<nav>
+  <a href="index.html" class="logo">Erika <span>Sala</span></a>
+  <ul>
+    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="index.html#contatto">Contatto</a></li>
+  </ul>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg" aria-hidden="true">PORTFOLIO</div>
+  <div class="page-eyebrow">Lavori selezionati</div>
+  <h1 class="page-title">Tutti i<br><em>progetti.</em></h1>
+  <div class="hero-bottom">
+    <p class="hero-count">6 progetti · 2021–2024</p>
+  </div>
+</section>
+
+<!-- FILTER BAR -->
+<div class="filter-bar">
+  <button class="filter-btn active" data-filter="all">Tutti</button>
+  <button class="filter-btn" data-filter="branding">Branding</button>
+  <button class="filter-btn" data-filter="app">App Design</button>
+  <button class="filter-btn" data-filter="ux">UX / Web</button>
+  <button class="filter-btn" data-filter="motion">Motion</button>
+  <button class="filter-btn" data-filter="system">Design System</button>
+</div>
+
+<!-- FULL PROJECTS GRID -->
+<div class="portfolio-grid">
+
+  <!-- 1: Featured — Branding -->
+  <a href="#" class="project-card featured fade-up" data-cat="branding">
+    <div class="project-bg bg-branding">
+      <div class="inner-card">
+        <div class="card-logo"></div>
+        <div class="card-line" style="width:80%"></div>
+        <div class="card-line short"></div>
+        <div class="card-line yellow"></div>
+        <div class="card-line" style="width:70%"></div>
+        <div class="card-line" style="width:55%"></div>
+        <div style="flex:1"></div>
+        <div class="card-line yellow" style="width:100%; height:3px;"></div>
+      </div>
+    </div>
+    <div class="project-overlay"></div>
+    <div class="project-always">
+      <div>
+        <p class="project-tag">Branding · Identità visiva</p>
+        <h3 class="project-name">Identità visiva<br>per Novo Studio</h3>
+      </div>
+      <span class="project-year">2024</span>
+    </div>
+  </a>
+
+  <!-- 2: App -->
+  <a href="#" class="project-card fade-up" data-cat="app" style="transition-delay:0.05s">
+    <div class="project-bg bg-app">
+      <div class="phone-mockup">
+        <div class="phone-notch"></div>
+        <div class="phone-row accent"></div>
+        <div class="phone-row" style="width:80%"></div>
+        <div class="phone-img-block"></div>
+        <div class="phone-row" style="width:65%"></div>
+        <div class="phone-row" style="width:45%"></div>
+      </div>
+    </div>
+    <div class="project-overlay"></div>
+    <div class="project-always">
+      <div>
+        <p class="project-tag">App Design · Mobile</p>
+        <h3 class="project-name">Fintech App<br>Mobile</h3>
+      </div>
+      <span class="project-year">2024</span>
+    </div>
+  </a>
+
+  <!-- 3: UX/Web -->
+  <a href="#" class="project-card fade-up" data-cat="ux" style="transition-delay:0.1s">
+    <div class="project-bg bg-ux">
+      <div class="wireframe-block">
+        <div class="wf-card active"><div class="wf-line y"></div><div class="wf-line"></div><div class="wf-line" style="width:80%"></div></div>
+        <div class="wf-card"><div class="wf-line" style="width:60%"></div><div class="wf-line"></div><div class="wf-line" style="width:40%"></div></div>
+      </div>
+      <div class="wireframe-block">
+        <div class="wf-card"><div class="wf-line y"></div><div class="wf-line"></div></div>
+        <div class="wf-card active"><div class="wf-line" style="width:75%"></div><div class="wf-line y"></div><div class="wf-line" style="width:50%"></div></div>
+      </div>
+    </div>
+    <div class="project-overlay"></div>
+    <div class="project-always">
+      <div>
+        <p class="project-tag">UX Research · Web</p>
+        <h3 class="project-name">Redesign<br>e-commerce</h3>
+      </div>
+      <span class="project-year">2023</span>
+    </div>
+  </a>
+
+  <!-- 4: Motion -->
+  <a href="#" class="project-card fade-up" data-cat="motion" style="transition-delay:0.15s">
+    <div class="project-bg bg-motion">
+      <div class="motion-center"></div>
+    </div>
+    <div class="project-overlay"></div>
+    <div class="project-always">
+      <div>
+        <p class="project-tag">Motion Design</p>
+        <h3 class="project-name">Brand Animation<br>per Orbis</h3>
+      </div>
+      <span class="project-year">2023</span>
+    </div>
+  </a>
+
+  <!-- 5: Web -->
+  <a href="#" class="project-card fade-up" data-cat="ux" style="transition-delay:0.2s">
+    <div class="project-bg bg-web">
+      <div class="browser-mockup">
+        <div class="browser-bar">
+          <div class="browser-dot"></div>
+          <div class="browser-dot"></div>
+          <div class="browser-dot"></div>
+        </div>
+        <div class="browser-body">
+          <div class="b-hero"></div>
+          <div class="b-row" style="width:70%"></div>
+          <div class="b-row" style="width:90%"></div>
+          <div class="b-row" style="width:55%"></div>
+        </div>
+      </div>
+    </div>
+    <div class="project-overlay"></div>
+    <div class="project-always">
+      <div>
+        <p class="project-tag">Web Design · UX</p>
+        <h3 class="project-name">Sito istituzionale<br>per Meridian</h3>
+      </div>
+      <span class="project-year">2022</span>
+    </div>
+  </a>
+
+  <!-- 6: Design System -->
+  <a href="#" class="project-card fade-up" data-cat="system" style="transition-delay:0.25s">
+    <div class="project-bg bg-system">
+      <div class="ds-block">
+        <div class="ds-circle"></div>
+        <div class="ds-connector"></div>
+        <div style="display:flex; gap:8px;">
+          <div class="ds-block">
+            <div class="ds-rect" style="width:50px"></div>
+            <div class="ds-label" style="width:40px"></div>
+          </div>
+          <div class="ds-block">
+            <div class="ds-rect" style="width:50px"></div>
+            <div class="ds-label" style="width:30px"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="project-overlay"></div>
+    <div class="project-always">
+      <div>
+        <p class="project-tag">Design System · UI</p>
+        <h3 class="project-name">Design System<br>per Lumia Platform</h3>
+      </div>
+      <span class="project-year">2021</span>
+    </div>
+  </a>
+
+</div>
+
+<!-- CTA -->
+<div class="portfolio-cta">
+  <div class="fade-up">
+    <h2 class="cta-text">Hai un progetto<br><em>in mente?</em></h2>
+  </div>
+  <a href="index.html#contatto" class="btn-outline fade-up" style="transition-delay:0.15s">Parliamone →</a>
+</div>
+
+<footer>
+  <p>© 2024 Erika Sala. Tutti i diritti riservati.</p>
+  <p>Designed with intention — Milano</p>
+</footer>
+
+<script>
+  const cursor = document.getElementById('cursor');
+  const ring = document.getElementById('cursorRing');
+  let mx = 0, my = 0, rx = 0, ry = 0;
+  document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; cursor.style.left = mx + 'px'; cursor.style.top = my + 'px'; });
+  (function animRing() { rx += (mx - rx) * 0.14; ry += (my - ry) * 0.14; ring.style.left = rx + 'px'; ring.style.top = ry + 'px'; requestAnimationFrame(animRing); })();
+  document.querySelectorAll('a, button').forEach(el => {
+    el.addEventListener('mouseenter', () => { ring.style.transform = 'translate(-50%, -50%) scale(1.8)'; ring.style.opacity = '0.3'; });
+    el.addEventListener('mouseleave', () => { ring.style.transform = 'translate(-50%, -50%) scale(1)'; ring.style.opacity = '0.6'; });
+  });
+
+  // Filter logic
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.project-card[data-cat]');
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      cards.forEach(card => {
+        if (filter === 'all' || card.dataset.cat === filter) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  const obs = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } }); }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Erika Sala</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<nav>
+  <a href="index.html" class="logo">Erika <span>Sala</span></a>
+  <ul>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="index.html#contatto">Contatto</a></li>
+  </ul>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg" aria-hidden="true">ABOUT</div>
+  <div class="page-eyebrow">Chi sono</div>
+  <h1 class="page-title">Una designer<br>con <em>un perché.</em></h1>
+</section>
+
+<!-- ABOUT MAIN -->
+<div class="about-main">
+  <div class="about-left fade-up">
+    <div class="about-portrait">
+      <div class="portrait-fill" aria-hidden="true">ES</div>
+      <p class="portrait-placeholder">La tua foto qui</p>
+    </div>
+  </div>
+  <div class="about-content">
+    <div class="fade-up" style="transition-delay:0.1s">
+      <p class="section-label">La mia storia</p>
+      <h2 class="section-title">Design che parte<br><em>dalle persone</em></h2>
+    </div>
+    <div class="fade-up" style="transition-delay:0.2s">
+      <p class="about-desc">
+        Sono una <strong>UI/UX designer con base a Milano</strong>, con una passione per il design che risolve problemi reali. Lavoro alla frontiera tra forma ed esperienza — perché un'interfaccia bella ma confusa non serve a nessuno.
+      </p>
+      <p class="about-desc">
+        Ho collaborato con <strong>startup, agenzie e brand internazionali</strong>, costruendo prodotti digitali da zero e riprogettando esperienze esistenti. Ogni progetto inizia con una domanda: <em>cosa serve davvero all'utente?</em>
+      </p>
+      <p class="about-desc">
+        Quando non sto disegnando interfacce, mi trovi a esplorare mostre di design contemporaneo, leggere di psicologia cognitiva o cercare il bar con il miglior espresso di Milano.
+      </p>
+    </div>
+
+    <!-- Timeline -->
+    <div class="timeline fade-up" style="transition-delay:0.3s">
+      <p class="timeline-label">Esperienze</p>
+
+      <div class="timeline-item">
+        <span class="tl-year">2022–oggi</span>
+        <div>
+          <p class="tl-role">Senior UI/UX Designer</p>
+          <p class="tl-company">Freelance · Milano</p>
+          <p class="tl-desc">Design di prodotti digitali per startup e PMI, dalla ricerca utente al prototipo interattivo. Branding e design system.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <span class="tl-year">2020–2022</span>
+        <div>
+          <p class="tl-role">UI Designer</p>
+          <p class="tl-company">Agenzia Digitale XYZ · Milano</p>
+          <p class="tl-desc">Progettazione di interfacce per clienti enterprise nei settori finance, retail e healthcare.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <span class="tl-year">2018–2020</span>
+        <div>
+          <p class="tl-role">Junior Designer</p>
+          <p class="tl-company">Studio Creativo ABC · Milano</p>
+          <p class="tl-desc">Brand identity, editorial design e primi progetti di UX per prodotti digitali.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <span class="tl-year">2014–2018</span>
+        <div>
+          <p class="tl-role">Laurea in Comunicazione Visiva</p>
+          <p class="tl-company">Politecnico di Milano</p>
+          <p class="tl-desc">Specializzazione in interaction design e visual communication. Tesi sull'accessibilità nel design di interfacce.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats-section">
+  <div class="stat-block fade-up">
+    <p class="stat-num">12+</p>
+    <p class="stat-label">Progetti completati</p>
+  </div>
+  <div class="stat-block fade-up" style="transition-delay:0.1s">
+    <p class="stat-num">5</p>
+    <p class="stat-label">Anni di esperienza</p>
+  </div>
+  <div class="stat-block fade-up" style="transition-delay:0.2s">
+    <p class="stat-num">8</p>
+    <p class="stat-label">Clienti soddisfatti</p>
+  </div>
+  <div class="stat-block fade-up" style="transition-delay:0.3s">
+    <p class="stat-num">3</p>
+    <p class="stat-label">Premi di design</p>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="about-cta">
+  <div class="fade-up">
+    <h2 class="cta-text">Vuoi sapere di più?<br><em>Scriviami.</em></h2>
+  </div>
+  <a href="index.html#contatto" class="btn-outline fade-up" style="transition-delay:0.15s">Inizia una conversazione →</a>
+</div>
+
+<footer>
+  <p>© 2024 Erika Sala. Tutti i diritti riservati.</p>
+  <p>Designed with intention — Milano</p>
+</footer>
+
+<script>
+  const cursor = document.getElementById('cursor');
+  const ring = document.getElementById('cursorRing');
+  let mx = 0, my = 0, rx = 0, ry = 0;
+  document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; cursor.style.left = mx + 'px'; cursor.style.top = my + 'px'; });
+  (function animRing() { rx += (mx - rx) * 0.14; ry += (my - ry) * 0.14; ring.style.left = rx + 'px'; ring.style.top = ry + 'px'; requestAnimationFrame(animRing); })();
+  document.querySelectorAll('a, button').forEach(el => {
+    el.addEventListener('mouseenter', () => { ring.style.transform = 'translate(-50%, -50%) scale(1.8)'; ring.style.opacity = '0.3'; });
+    el.addEventListener('mouseleave', () => { ring.style.transform = 'translate(-50%, -50%) scale(1)'; ring.style.opacity = '0.6'; });
+  });
+  const obs = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } }); }, { threshold: 0.12 });
+  document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
