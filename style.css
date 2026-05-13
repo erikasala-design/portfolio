@@ -261,7 +261,7 @@ footer p {
 }
 
 /* layout principale */
-.hero-inner {
+.hero-content {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -269,7 +269,7 @@ footer p {
 }
 
 /* colonna sinistra */
-.hero-main {
+.hero-text {
   max-width: 900px;
 }
 
